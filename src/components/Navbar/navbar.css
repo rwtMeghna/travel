@@ -1,0 +1,197 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 365);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --CardBG: rgb(255, 255, 235);
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColorDeam);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.242);
+
+  .logo {
+    color: var(--blackColor);
+    font-weight: 600;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5px;
+
+    .icon{
+        color: var(--secondaryColor);
+        font-size: 35px;
+        transform: translateY(5px);
+        margin-left: 5px;
+        &:hover.icon{
+            color: var(--blackColor);
+           }
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .navBar{
+      position: absolute;
+      background: var(--whiteColorDeam);
+      height: max-content;
+      width: 80%;
+      border-radius: 1rem;
+      top: -500rem;
+      left: 50%;
+      padding:1rem;
+      transform: translate(-50%);
+      transition: 0.1s ease-in-out;
+      z-index: 2000;
+      box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+     /* transition:3s ease-in-out; */
+      .navLists {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: .5rem 0;
+        margin: auto;
+
+
+
+        .navItem {
+            padding: .5rem 0;
+
+            .navLink {
+                color: var(--textColor);
+                font-size: .9rem;
+                font-weight: 500;
+                &:hover{
+                    color: var(--primaryColor);
+                }
+          }
+      }
+      .btn{
+        margin-top: 1rem;
+        a{
+            font-weight: 700;
+            color:var(--whiteColor)
+        }
+    }
+    }
+
+    .closeNavbar{
+        position: absolute;
+        top:1rem;
+        right:1.5rem;
+        color: var(--primaryColor);
+
+        &:hoverd{
+            color: var(--blackColor);
+        }
+    }
+    /* .activeNavBar{
+        top:7rem;
+      } */
+    }
+
+    .activeNavbar{
+      top:7rem;
+    }
+}
+.toggleNavbar{
+    .icon{
+        font-size: 30px;
+        color:var(--secondaryColor);
+        position:absolute;
+        right:2rem;
+        top:1rem;
+    }
+       &:hover.icon{
+        color: var(--blackColor);
+       }
+
+        }
+    }
+
+
+
+
+    @media screen and(min-width:769px) {
+     .toggleNavbar , .closeNavbar{ display: none;}
+
+
+     .header{
+      padding:1.5rem 2rem;
+
+
+      .navBar{
+             .navLists{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+
+              .navItem{
+                .navLink{
+                  color:var(--textColor);
+                  padding:0 0.45rem;
+                  font-size:1rem;
+                  font-weight: 500;
+                }
+                .navLink:hover{
+                  color:var(--primaryColor);
+
+                }
+              }
+             }
+
+
+             .btn{
+              margin-left: 1rem;
+
+              a{
+                color: var(--whiteColor);
+                font-weight: 500;
+              }
+             }
+      }
+     }
+    }
+
+    @media screen and (min-width:770px){
+      .toggleNavbar , .closeNavbar{ display: none;}
+      .header{
+        .navBar{
+          .navLists{
+            .navItem{
+              padding: 0 0.7rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width:1240px){
+      .toggleNavbar , .closeNavbar{ display: none;}
+      .header{
+        .navBar{
+          .navLists{
+            .navItem{
+              padding: 1rem 1.5rem;
+            }
+          }
+        }
+      }
+    }
