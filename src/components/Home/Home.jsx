@@ -1,6 +1,6 @@
 import React ,{useEffect} from 'react'
 import video from "../../Assests/video(1).mp4";
-import "./home.css";
+import "./home.scss";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";
 import { FiFacebook } from "react-icons/fi";

@@ -56,9 +56,9 @@ align-items: center;
     display:grid;
     align-items:center;
 }
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 
 
 .btn{
@@ -81,7 +81,7 @@ color:black;
 background: var(--blackColor);
 }
 
-img , video{
+img, video{
     width:100%;
 height:auto;
 }
