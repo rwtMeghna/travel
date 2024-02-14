@@ -1,6 +1,5 @@
 import React ,{useEffect} from 'react'
 import video from "../../Assests/video(1).mp4";
-import "./home.scss";
 import { GrLocation } from "react-icons/gr";
 import { HiFilter } from "react-icons/hi";
 import { FiFacebook } from "react-icons/fi";
@@ -10,7 +9,7 @@ import { FaListCheck } from "react-icons/fa6";
 import { TbAppsFilled } from "react-icons/tb";
 import Aos from "aos";
 import 'aos/dist/aos.css';
-
+import "./home.css"
 
 const  Home=()=> {
 
@@ -20,6 +19,7 @@ const  Home=()=> {
    },[])
 
 
+   
   return (
     <section className="home">
       <div className="overlay"></div>

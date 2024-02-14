@@ -1,5 +1,5 @@
 import React ,{useEffect} from "react";
-import "./footer.scss";
+import "./footer.css";
 import video2 from "../../Assests/video(2).mp4";
 import { FiSend } from "react-icons/fi";
 import { MdOutlineTravelExplore } from "react-icons/md";
